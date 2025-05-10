@@ -1,0 +1,82 @@
+
+import { 
+  Shield, 
+  Database, 
+  Link, 
+  FileSearch, 
+  Building2, 
+  FileText
+} from "lucide-react";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+
+export const ServiceCards = () => {
+  const services = [
+    {
+      title: "Cybersecurity Solutions",
+      description: "Comprehensive security products and services to protect your digital assets and infrastructure.",
+      icon: Shield,
+      link: "#cybersecurity"
+    },
+    {
+      title: "Healthcare Tech",
+      description: "Emerging technology solutions designed for modern healthcare challenges and innovation.",
+      icon: FileText,
+      link: "#healthcare"
+    },
+    {
+      title: "Data Insights",
+      description: "Analytics and insights resources to help you make data-driven decisions.",
+      icon: FileSearch,
+      link: "#insights"
+    },
+    {
+      title: "PropTech Solutions",
+      description: "Technology solutions for real estate and property management modernization.",
+      icon: Building2,
+      link: "#proptech"
+    },
+    {
+      title: "FinTech Solutions",
+      description: "Innovative financial technology services for banking and financial institutions.",
+      icon: Database,
+      link: "#fintech"
+    },
+  ];
+
+  return (
+    <section id="services" className="py-16 bg-white">
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
+            <p className="max-w-[900px] text-slate-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Discover our comprehensive range of technology solutions designed for the modern enterprise.
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service, index) => (
+            <Card key={index} className="group transition-all hover:-translate-y-1 hover:shadow-lg">
+              <CardHeader>
+                <div className="mb-2 w-12 h-12 flex items-center justify-center rounded-full bg-primary/10">
+                  <service.icon className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle>{service.title}</CardTitle>
+                <CardDescription>{service.description}</CardDescription>
+              </CardHeader>
+              <CardFooter>
+                <a 
+                  href={service.link} 
+                  className="inline-flex items-center gap-1 text-sm text-primary hover:underline"
+                >
+                  Learn more
+                  <Link className="h-4 w-4" />
+                </a>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
