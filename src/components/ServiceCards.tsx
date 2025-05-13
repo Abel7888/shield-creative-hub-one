@@ -24,7 +24,7 @@ export const ServiceCards = () => {
       description: "Emerging technology solutions designed for modern healthcare challenges and innovation.",
       icon: FileText,
       link: "#healthcare",
-      image: "https://images.unsplash.com/photo-1576091160550-bdfa8387fbb9?q=80&w=2070&auto=format"
+      image: "https://images.unsplash.com/photos/a-woman-in-a-white-coat-and-blue-gloves-is-wearing-a-virtual-headset-IihA7E9ZAug"
     },
     {
       title: "Data Insights",
