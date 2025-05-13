@@ -17,14 +17,14 @@ export const ServiceCards = () => {
       description: "Comprehensive security products and services to protect your digital assets and infrastructure.",
       icon: Shield,
       link: "#cybersecurity",
-      image: "https://images.unsplash.com/photo-1623156344717-8d33f92e68e0?ixlib=rb-4.0.3&ixid=M3wyMDg1NzB8MHwxfGFsbHwxfHx8fHx8fHwxNzE1NzAwMDE2&auto=format&fit=crop&w=2070&q=80"
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop"
     },
     {
       title: "Healthcare Tech",
       description: "Emerging technology solutions designed for modern healthcare challenges and innovation.",
       icon: FileText,
       link: "#healthcare",
-      image: "https://images.unsplash.com/photo-1623156344717-8d33f92e68e0"
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
     },
     {
       title: "Data Insights",
@@ -45,7 +45,7 @@ export const ServiceCards = () => {
       description: "Innovative financial technology services for banking and financial institutions.",
       icon: Database,
       link: "#fintech",
-      image: "https://images.unsplash.com/photo-1534470397273-a1c104013e55?q=80&w=2070&auto=format"
+      image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop"
     },
   ];
 
