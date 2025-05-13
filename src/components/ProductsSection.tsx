@@ -1,37 +1,44 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export const ProductsSection = () => {
   const products = [
     {
       title: "DataShield Sentry",
       category: "Cybersecurity",
-      description: "Enterprise-grade threat detection and prevention system."
+      description: "Enterprise-grade threat detection and prevention system.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format"
     },
     {
       title: "MediConnect",
       category: "Healthcare",
-      description: "Secure patient data management and exchange platform."
+      description: "Secure patient data management and exchange platform.",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format"
     },
     {
       title: "PropIntel",
       category: "PropTech",
-      description: "AI-powered property management and analytics suite."
+      description: "AI-powered property management and analytics suite.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073&auto=format"
     },
     {
       title: "FinGuard",
       category: "FinTech",
-      description: "Advanced fraud detection and prevention for financial institutions."
+      description: "Advanced fraud detection and prevention for financial institutions.",
+      image: "https://images.unsplash.com/photo-1553729784-e91953dec042?q=80&w=2070&auto=format"
     },
     {
       title: "DataVision",
       category: "Analytics",
-      description: "Real-time business intelligence and visualization tools."
+      description: "Real-time business intelligence and visualization tools.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format"
     },
     {
       title: "SecureCloud",
       category: "Infrastructure",
-      description: "Managed cloud security and compliance platform."
+      description: "Managed cloud security and compliance platform.",
+      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format"
     }
   ];
 
@@ -49,8 +56,12 @@ export const ProductsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-r from-slate-800 to-slate-700 flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">{product.title.charAt(0)}</span>
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={product.image} 
+                  alt={product.title} 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
               </div>
               <CardHeader className="p-4">
                 <CardTitle className="text-xl">{product.title}</CardTitle>

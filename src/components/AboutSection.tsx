@@ -1,4 +1,6 @@
 
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+
 export const AboutSection = () => {
   return (
     <section id="about" className="py-16 bg-slate-50">
@@ -39,10 +41,42 @@ export const AboutSection = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-slate-100 to-slate-200 rounded-lg transform rotate-3 group-hover:rotate-1 transition-transform"></div>
             <div className="relative p-6 bg-white border rounded-lg shadow-lg">
               <div className="grid grid-cols-2 gap-4">
-                <div className="aspect-square bg-slate-100 rounded-md"></div>
-                <div className="aspect-square bg-slate-100 rounded-md"></div>
-                <div className="aspect-square bg-slate-100 rounded-md"></div>
-                <div className="aspect-square bg-slate-100 rounded-md"></div>
+                <div className="aspect-square rounded-md overflow-hidden">
+                  <AspectRatio ratio={1}>
+                    <img 
+                      src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format" 
+                      alt="Tech professional working" 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </div>
+                <div className="aspect-square rounded-md overflow-hidden">
+                  <AspectRatio ratio={1}>
+                    <img 
+                      src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format" 
+                      alt="Business technology meeting" 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </div>
+                <div className="aspect-square rounded-md overflow-hidden">
+                  <AspectRatio ratio={1}>
+                    <img 
+                      src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=2070&auto=format" 
+                      alt="Code on screen" 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </div>
+                <div className="aspect-square rounded-md overflow-hidden">
+                  <AspectRatio ratio={1}>
+                    <img 
+                      src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?q=80&w=2070&auto=format" 
+                      alt="Modern technology" 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </div>
               </div>
               <div className="mt-4">
                 <h3 className="font-medium">Our Technology Stack</h3>

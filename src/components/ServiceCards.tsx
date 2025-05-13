@@ -8,6 +8,7 @@ import {
   FileText
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export const ServiceCards = () => {
   const services = [
@@ -15,31 +16,36 @@ export const ServiceCards = () => {
       title: "Cybersecurity Solutions",
       description: "Comprehensive security products and services to protect your digital assets and infrastructure.",
       icon: Shield,
-      link: "#cybersecurity"
+      link: "#cybersecurity",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format"
     },
     {
       title: "Healthcare Tech",
       description: "Emerging technology solutions designed for modern healthcare challenges and innovation.",
       icon: FileText,
-      link: "#healthcare"
+      link: "#healthcare",
+      image: "https://images.unsplash.com/photo-1576091160550-bdfa8387fbb9?q=80&w=2070&auto=format"
     },
     {
       title: "Data Insights",
       description: "Analytics and insights resources to help you make data-driven decisions.",
       icon: FileSearch,
-      link: "#insights"
+      link: "#insights",
+      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2070&auto=format"
     },
     {
       title: "PropTech Solutions",
       description: "Technology solutions for real estate and property management modernization.",
       icon: Building2,
-      link: "#proptech"
+      link: "#proptech",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format"
     },
     {
       title: "FinTech Solutions",
       description: "Innovative financial technology services for banking and financial institutions.",
       icon: Database,
-      link: "#fintech"
+      link: "#fintech",
+      image: "https://images.unsplash.com/photo-1534470397273-a1c104013e55?q=80&w=2070&auto=format"
     },
   ];
 
@@ -57,6 +63,15 @@ export const ServiceCards = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card key={index} className="group transition-all hover:-translate-y-1 hover:shadow-lg">
+              <div className="h-48 overflow-hidden">
+                <AspectRatio ratio={16/9}>
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+                  />
+                </AspectRatio>
+              </div>
               <CardHeader>
                 <div className="mb-2 w-12 h-12 flex items-center justify-center rounded-full bg-primary/10">
                   <service.icon className="h-6 w-6 text-primary" />

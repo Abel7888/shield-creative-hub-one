@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export const HeroSection = () => {
   return (
@@ -29,13 +30,33 @@ export const HeroSection = () => {
             </div>
             <div className="relative bg-white p-6 shadow-lg rounded-lg">
               <div className="aspect-video bg-slate-800 rounded-md overflow-hidden">
-                <div className="h-full w-full flex items-center justify-center text-white text-lg font-medium">
-                  Interactive Demo
-                </div>
+                <AspectRatio ratio={16/9}>
+                  <img 
+                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format" 
+                    alt="Computer screen with code" 
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
               </div>
               <div className="mt-4 grid grid-cols-2 gap-4">
-                <div className="h-24 bg-slate-100 rounded-md"></div>
-                <div className="h-24 bg-slate-100 rounded-md"></div>
+                <div className="h-24 bg-slate-100 rounded-md overflow-hidden">
+                  <AspectRatio ratio={16/9}>
+                    <img 
+                      src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format" 
+                      alt="Circuit board closeup" 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </div>
+                <div className="h-24 bg-slate-100 rounded-md overflow-hidden">
+                  <AspectRatio ratio={16/9}>
+                    <img 
+                      src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format" 
+                      alt="Programming code" 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </div>
               </div>
             </div>
           </div>
