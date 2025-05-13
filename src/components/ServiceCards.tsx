@@ -17,7 +17,7 @@ export const ServiceCards = () => {
       description: "Comprehensive security products and services to protect your digital assets and infrastructure.",
       icon: Shield,
       link: "#cybersecurity",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format"
+      image: "https://images.unsplash.com/photo-1623156344717-8d33f92e68e0?ixlib=rb-4.0.3&ixid=M3wyMDg1NzB8MHwxfGFsbHwxfHx8fHx8fHwxNzE1NzAwMDE2&auto=format&fit=crop&w=2070&q=80"
     },
     {
       title: "Healthcare Tech",
