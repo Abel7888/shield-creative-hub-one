@@ -30,7 +30,7 @@ export const ServiceCards = () => {
       title: "Data Insights",
       description: "Analytics and insights resources to help you make data-driven decisions.",
       icon: FileSearch,
-      link: "#insights",
+      link: "https://www.datashieldpartners.blog",
       image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2070&auto=format"
     },
     {
