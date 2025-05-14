@@ -23,7 +23,7 @@ export const ServiceCards = () => {
       title: "Healthcare Tech",
       description: "Emerging technology solutions designed for modern healthcare challenges and innovation.",
       icon: FileText,
-      link: "#healthcare",
+      link: "https://www.datashieldhealthcare.space",
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
     },
     {
