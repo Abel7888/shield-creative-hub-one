@@ -34,14 +34,14 @@ export const ServiceCards = () => {
       image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2070&auto=format"
     },
     {
-      title: "PropTech Solutions",
+      title: "PropTech Solutions (Coming Soon)",
       description: "Technology solutions for real estate and property management modernization.",
       icon: Building2,
       link: "#proptech",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format"
     },
     {
-      title: "FinTech Solutions",
+      title: "FinTech Solutions (coming Soon)",
       description: "Innovative financial technology services for banking and financial institutions.",
       icon: Database,
       link: "#fintech",
