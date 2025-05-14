@@ -1,6 +1,4 @@
 
-import { Shield } from "lucide-react";
-
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -10,7 +8,11 @@ export const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Shield className="h-6 w-6 text-primary" />
+              <img 
+                src="/lovable-uploads/1fd50076-98a0-45c7-bea1-7dde101b3542.png" 
+                alt="DataShield Partners Logo" 
+                className="h-8 w-auto"
+              />
               <span className="font-semibold text-xl text-white">DataShield</span>
             </div>
             <p className="text-slate-400 text-sm mt-2">
@@ -33,6 +35,7 @@ export const Footer = () => {
               </a>
             </div>
           </div>
+          
           <div>
             <h3 className="font-medium text-white mb-4">Solutions</h3>
             <ul className="space-y-2 text-sm">

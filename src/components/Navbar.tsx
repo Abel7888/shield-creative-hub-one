@@ -1,7 +1,6 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Shield } from "lucide-react";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,7 +9,11 @@ export const Navbar = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
-          <Shield className="h-6 w-6 text-primary" />
+          <img 
+            src="/lovable-uploads/1fd50076-98a0-45c7-bea1-7dde101b3542.png" 
+            alt="DataShield Partners Logo" 
+            className="h-10 w-auto"
+          />
           <span className="font-semibold text-xl">DataShield Partners</span>
         </div>
 
