@@ -16,7 +16,7 @@ export const ServiceCards = () => {
       title: "Cybersecurity Solutions",
       description: "Comprehensive security products and services to protect your digital assets and infrastructure.",
       icon: Shield,
-      link: "#cybersecurity",
+      link: "https://www.datashieldsecurity.xyz",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop"
     },
     {
@@ -27,7 +27,7 @@ export const ServiceCards = () => {
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
     },
     {
-      title: "Data Insights",
+      title: "Data Insights & Blogs",
       description: "Analytics and insights resources to help you make data-driven decisions.",
       icon: FileSearch,
       link: "https://www.datashieldpartners.blog",
