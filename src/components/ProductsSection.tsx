@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 export const ProductsSection = () => {
   const products = [
@@ -26,6 +27,20 @@ export const ProductsSection = () => {
       description: "Solve IT issues before they impact users",
       image: "/lovable-uploads/0f545c2c-1dfa-41f7-9dcc-c0c5f4a6c097.png",
       bgColor: "bg-gradient-to-r from-slate-900 to-slate-800"
+    },
+    {
+      title: "Lumen Edge Cloud Solutions",
+      category: "Cloud Computing",
+      description: "From edge compute and storage servers to data processing, machine learning (ML) and IoT devices",
+      image: "/lovable-uploads/ed80be76-a5cc-453c-8937-02cbfeeda631.png",
+      bgColor: "bg-gradient-to-br from-gray-800 to-gray-600"
+    },
+    {
+      title: "Palo Alto Prisma AIRS",
+      category: "AI Security",
+      description: "Prisma® AIRS is the world's most comprehensive AI security platform",
+      image: "/lovable-uploads/c135d375-8beb-48de-8362-4dee1acae79f.png",
+      bgColor: "bg-gradient-to-r from-red-600 to-red-400"
     }
   ];
 
@@ -52,9 +67,9 @@ export const ProductsSection = () => {
               </div>
               <CardHeader className="p-4">
                 <CardTitle className="text-xl">{product.title}</CardTitle>
-                <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 mt-2">
+                <Badge variant="default" className="mt-2">
                   {product.category}
-                </span>
+                </Badge>
                 <CardDescription className="pt-3">{product.description}</CardDescription>
               </CardHeader>
               <CardContent className="p-4 pt-0">
