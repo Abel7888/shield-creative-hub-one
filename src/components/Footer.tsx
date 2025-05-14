@@ -39,19 +39,19 @@ export const Footer = () => {
           <div>
             <h3 className="font-medium text-white mb-4">Solutions</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#cybersecurity" className="text-slate-400 hover:text-white">Cybersecurity</a></li>
-              <li><a href="#healthcare" className="text-slate-400 hover:text-white">Healthcare Tech</a></li>
-              <li><a href="#insights" className="text-slate-400 hover:text-white">Data Insights</a></li>
-              <li><a href="#proptech" className="text-slate-400 hover:text-white">PropTech Solutions</a></li>
-              <li><a href="#fintech" className="text-slate-400 hover:text-white">FinTech Solutions</a></li>
+              <li><a href="https://www.datashieldsecurity.xyz" className="text-slate-400 hover:text-white">Cybersecurity</a></li>
+              <li><a href="https://www.datashieldhealthcare.space/" className="text-slate-400 hover:text-white">Healthcare Tech</a></li>
+              <li><a href="https://www.datashieldpartners.blog" className="text-slate-400 hover:text-white">Data Insights</a></li>
+              <li><a href="#proptech" className="text-slate-400 hover:text-white">PropTech Solutions (Coming Soon)</a></li>
+              <li><a href="#fintech" className="text-slate-400 hover:text-white">FinTech Solutions(Coming soon)</a></li>
             </ul>
           </div>
           <div>
             <h3 className="font-medium text-white mb-4">Company</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#about" className="text-slate-400 hover:text-white">About Us</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white">Careers</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white">Blog</a></li>
+              <li><a href="#" className="text-slate-400 hover:text-white"></a></li>
+              <li><a href="https://www.datashieldpartners.blog" className="text-slate-400 hover:text-white">Blog</a></li>
               <li><a href="#contact" className="text-slate-400 hover:text-white">Contact</a></li>
             </ul>
           </div>
