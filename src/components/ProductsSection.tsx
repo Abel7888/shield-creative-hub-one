@@ -74,7 +74,7 @@ export const ProductsSection = () => {
               </CardHeader>
               <CardContent className="p-4 pt-0">
                 <Button variant="ghost" className="p-0 h-auto font-semibold text-primary flex items-center gap-1">
-                  Learn more <ChevronRight className="h-4 w-4" />
+                  Request Demo <ChevronRight className="h-4 w-4" />
                 </Button>
               </CardContent>
             </Card>
